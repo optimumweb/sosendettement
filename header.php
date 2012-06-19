@@ -13,7 +13,7 @@
 			    <div class="grid_9">
 					<nav id="main-nav" role="navigation">
 						<div class="container">
-							<?php wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'walker' => 'Description_Walker' ) ); ?>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'walker' => new Description_Walker() ) ); ?>
 							<div class="clear"></div>
 						</div>
 					</nav>
