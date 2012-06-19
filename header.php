@@ -8,7 +8,7 @@
             <div class="container <?php wpbp_option('container_class'); ?>">
             	<div class="grid_3">
 					<section id="site-title">
-						<a id="logo" href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></a>
+						<a id="logo" href="<?php echo home_url(); ?>/" class="same-height-as" data-ref="#main-nav"><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></a>
 					</section>
 			    </div>
 			    <div class="grid_9">
