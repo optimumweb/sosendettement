@@ -62,7 +62,16 @@ a {
 }
 
 #banner {
+	position: relative;
 	background: @beige;
+	
+	.topline {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		height: 10px;
+		background: rgba(0,0,0,0.2);
+	}
 	
 	#banner-content {
 		color: #000;
