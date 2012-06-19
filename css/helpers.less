@@ -16,7 +16,10 @@
 	&.red {
 		background: @red;
 		color: #fff;
-		.box-shadow(2px,2px,0,@dark-red);
+		
+		&:hover {
+			.box-shadow(2px,2px,0,@dark-red);
+		}
 	}
 	
 	&.large {
