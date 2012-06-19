@@ -23,3 +23,28 @@
             <?php wpbp_header_inside_after(); ?>
 		</header>
 		<?php wpbp_header_after(); ?>
+		
+		<section id="banner">
+			<div class="topline"></div>
+			<div class="container <?php wpbp_option('container_class'); ?>">
+				<div class="grid_5">
+					<div class="title1"><?php _e("Au bout du rouleau?", 'sosendettement'); ?></div>
+					<div class="title3"><?php _e("Vos dettes sont-elles la source de :", 'sosendettement'); ?></div>
+					<ul>
+						<li>Troubles du sommeil?</li>
+						<li>Problèmes de santé?</li>
+						<li>Conflits avec la famille?</li>
+					</ul>
+					<div class="title2"><?php _e("Vous pouvez vous en sortir!", 'sosendettement'); ?></div>
+					<div><a class="button red arrow" href="#"><?php _e("Consultez un professionnel", 'sosendettement'); ?></a></div>
+				</div>
+				<div class="grid_7">
+					<?php wpbp_image_tag(array(
+						'src' => THEME_URI . '/img/banner_image_1.jpg',
+						'width' => 540,
+						'height' => 360,
+						'alt' => __("Solutions aux dettes et à l'endettement", 'sosendettement')
+					)); ?>
+				</div>
+			</div>
+		</section>
