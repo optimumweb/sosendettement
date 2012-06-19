@@ -37,7 +37,7 @@
 							<li><?php _e("Conflits avec la famille?", 'sosendettement'); ?></li>
 						</ul>
 						<div class="title2"><?php _e("Vous pouvez vous en sortir!", 'sosendettement'); ?></div>
-						<div><a class="button red arrow" href="#"><?php _e("Consultez un professionnel", 'sosendettement'); ?></a></div>
+						<div><a class="button red large arrow" href="#"><?php _e("Consultez un professionnel", 'sosendettement'); ?></a></div>
 					</section>
 				</div>
 				<div class="grid_7">
