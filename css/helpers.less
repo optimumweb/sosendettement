@@ -14,6 +14,13 @@
 	line-height: 1.0;
 	.border-radius(0.2em);
 	
+	&.arrow {
+		> span {
+			padding-right: 30px;
+			background: url(../img/button_arrow.png) right center no-repeat;
+		}
+	}
+	
 	&.red {
 		background: @red;
 		color: #fff;
@@ -25,5 +32,12 @@
 	
 	&.large {
 		font-size: 1.2em;
+		
+		&.arrow {
+			> span {
+				padding-right: 40px;
+				background: url(../img/button_large_arrow.png) right center no-repeat;
+			}
+		}
 	}
 }
