@@ -91,7 +91,8 @@ class sosendettement_section_widget extends WP_Widget {
 				'id' => $this->get_field_id('description'),
 				'name' => $this->get_field_name('description'),
 				'label' => 'Description:',
-				'type' => 'textarea'
+				'type' => 'textarea',
+				'class' => 'widefat'
 			),
 			'url' => array(
 				'id' => $this->get_field_id('url'),
