@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$a.html('<span>' + $a.html()  + '</span>');
 	});
 	
-	$('.scroll-to').click(function(e) {
+	$('a.scroll-to, .scroll-to > a').click(function(e) {
 		e.preventDefault();
 		var $this = $(this),
 			href = $this.attr('href'),
