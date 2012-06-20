@@ -182,3 +182,32 @@ h1, h2, h3, h4, h5, h6 {
 #content {
 	padding: 1.5em 0;
 }
+
+.section-widget {
+	background: @beige;
+	border: 1px solid @dark-beige;
+	.border-radius(@radius);
+	
+	> .container {
+		padding: 1em;
+	}
+	
+	.type {
+		display: block;
+		float: left;
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 1.0;
+		padding: 0.15em;
+		background: #000;
+		.border-radius(@radius);
+	}
+	
+	.widget-title {
+		font-size: 1.4em;
+	}
+	
+	.description {
+		font-size: 0.9em;
+	}
+}
