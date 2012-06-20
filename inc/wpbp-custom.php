@@ -103,7 +103,7 @@ class sosendettement_section_widget extends WP_Widget {
 			'css' => array(
 				'id' => $this->get_field_id('css'),
 				'name' => $this->get_field_name('css'),
-				'label' => 'CSS (Style):',
+				'label' => 'Style (css):',
 				'type' => 'text',
 				'class' => 'widefat'
 			),
