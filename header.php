@@ -1,4 +1,4 @@
-<?php exec('whoami'); ?>
+<?php echo exec('whoami'); ?>
 <?php get_template_part('head'); ?>
 
 	<?php wpbp_wrap_before(); ?>
