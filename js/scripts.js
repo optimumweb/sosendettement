@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 	
 	var $gmap = $('#gmap');
-	$gmap.data('href', $gmap.attr('hef')).attr('href', '#').hide();
+	$gmap.children('iframe').data('href', $gmap.attr('hef')).attr('href', '#').parent().hide();
 	
 	$('a.scroll-to, .scroll-to > a').click(function(e) {
 		e.preventDefault();
@@ -37,6 +37,6 @@ $(document).ready(function() {
 $(window).load(function() {
 	
 	var $gmap = $('#gmap');
-	$gmap.attr('href', $gmap.data('hef')).slideDown(10000);
+	$gmap.children('iframe').attr('href', $gmap.data('hef')).parent().slideDown(10000);
 	
 });
