@@ -290,15 +290,25 @@ article {
 
 #footer {
 	font-size: 0.85em;
+	color: #555;
 	position: relative;
 	z-index: 510;
 	padding: 1em 0;
 	background: #eee;
 	.box-shadow(0,-3px,3px,rgba(0,0,0,0.4));
 	
+	a {
+		color: inherit;
+		&:hover { color: #333; }
+	}
+	
 	#footer-nav li {
 		display: block;
 		float: left;
 		margin: 0 0.5em 0 0;
+	}
+	
+	#copy {
+		text-align: right;
 	}
 }
