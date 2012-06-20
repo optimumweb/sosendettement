@@ -126,3 +126,43 @@ a {
 		}
 	}
 }
+
+#value-bar {
+	background: #eee;
+	
+	#value-bar-title {
+		background: url(../img/value_bar_title_bg.png) center bottom no-repeat;
+		font-size: 2em;
+		font-weight: bold;
+		color: #000;
+	}
+	
+	#value-bar-bullets {
+		font-size: 1.1em;
+		
+		.bullet {
+			position: relative;
+		}
+		
+		span {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 10px;
+			background: @red;
+			.border-radius(100px);
+		}
+		
+		p {
+			position: absolute;
+			top: 0;
+			left: 50px;
+		}
+		
+		em {
+			color: #000;
+			font-style: normal;
+		}
+	}
+}
