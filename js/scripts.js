@@ -39,7 +39,7 @@ $(window).load(function() {
 	var $gmap = $('#gmap');
 	$gmap.attr('src', $gmap.data('src'));
 	$gmap.ready(function() {
-		$(this).slideDown();
+		$(this).show();
 	});
 	
 });
