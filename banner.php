@@ -38,7 +38,7 @@
 								<?php wpbp_image_tag( array(
 									'src' => THEME_URI . '/img/banner_image.jpg',
 									'width' => 540,
-									'height' => 140,
+									'height' => 150,
 									'alt' => __("Solutions aux dettes et à l'endettement", 'sosendettement')
 								) ); ?>
 							<?php endif; ?>
