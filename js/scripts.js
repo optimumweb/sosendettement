@@ -12,4 +12,21 @@ $(document).ready(function() {
 		$a.html('<span>' + $a.html()  + '</span>');
 	});
 	
+	$link.filter('.scroll-to').click(function(e) {
+		e.preventDefault();
+		var $this = $(this),
+			href = $this.attr('href'),
+			$href = $(href),
+			duration = $this.data('duration') || 600;
+		$.scrollTo(
+			$href,
+			duration,
+			{
+				onAfter: function() {
+					window.location.hash = href;
+				}
+			}
+		);
+	});
+	
 });
