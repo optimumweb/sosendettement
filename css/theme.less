@@ -138,27 +138,27 @@ a {
 		line-height: 72px;
 	}
 	
-	#value-bar-bullets {
+	#value-bar-items {
 		font-size: 1.1em;
 		padding: 0.5em 0;
 		
-		.bullet {
+		.item {
 			position: relative;
 			width: 300px;
 		}
 		
-		span {
-			display: block;
+		.bullet {
 			position: absolute;
 			top: 0;
 			left: 0;
-			font-size: 1.3em;
-			line-height: 1.0;
+			font-size: 1.2em;
+			width: 27px;
+			height: 27px;
+			text-align: center;
+			line-height: 27px;
 			font-style: italic;
 			color: #fff;
-			padding: 5px 10px;
-			background: @red;
-			.border-radius(100px);
+			background: url(../img/bullet_bg.png) center center no-repeat;
 		}
 		
 		p {
