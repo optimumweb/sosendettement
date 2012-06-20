@@ -37,6 +37,6 @@ $(document).ready(function() {
 $(window).load(function() {
 	
 	var $gmap = $('#gmap');
-	$gmap.attr('href', $gmap.data('hef')).slideDown('slow');
+	$gmap.attr('href', $gmap.data('hef')).slideDown(10000);
 	
 });
