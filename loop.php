@@ -35,7 +35,7 @@
 					<?php if (is_archive() || is_search()) : ?>
 						<?php the_excerpt(); ?>
 					<?php else : ?>
-						<?php the_content( __("Lire la suite", 'sosendettement') ); ?>
+						<?php the_content( __("Lire la suite...", 'sosendettement') ); ?>
 					<?php endif; ?>
 				</section>
 				<footer class="post-footer">
