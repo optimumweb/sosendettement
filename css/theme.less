@@ -24,6 +24,7 @@ h6 { font-size: 0.9em; }
 .page-title {
 	font-size: 1.25em;
 	text-transform: uppercase;
+	margin-top: 0;
 	padding-bottom: 6px;
 	background: url(../img/page_title_bg.png) left bottom no-repeat;
 }
@@ -188,12 +189,16 @@ h6 { font-size: 0.9em; }
 
 #main {
 	article {
-		.post-title a {
-			color: @red;
-			text-decoration: underline;
+		.post-title {
+			margin-top: 0;
 			
-			> span {
-				color: #333;
+			a {
+				color: @red;
+				text-decoration: underline;
+				
+				> span {
+					color: #333;
+				}
 			}
 		}
 		
