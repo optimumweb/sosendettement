@@ -36,7 +36,8 @@ class sosendettement_section_widget extends WP_Widget {
 		$class = ' class="section-widget"';
 		$style = $css ? ' style="' . $css . '"' : '';
 		
-		echo '<div' . $id . $class . $style . '>';
+		echo '<div' . $id . $class . '>';
+		echo '<div class="styler"' . $style . '>';
 		echo '<div class="container">';
 		
 		if ( isset($type) && strlen($type) > 0 ) {
@@ -58,6 +59,7 @@ class sosendettement_section_widget extends WP_Widget {
 			echo '<a class="button" href="' . $url . '" title="' . $title . '"' . $target . $nofollow . '>' . $button . '</a>';
 		}
 		
+		echo '</div>';
 		echo '</div>';
 		echo '</div>';
 		
