@@ -124,4 +124,4 @@ class sosendettement_section_widget extends WP_Widget {
 	}
 }
 
-register_widget('wpbp_latest_posts');
+register_widget('sosendettement_section_widget');
