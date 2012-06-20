@@ -50,7 +50,7 @@ class sosendettement_section_widget extends WP_Widget {
 		if ( ( isset($url) && strlen($url) > 0 ) && ( isset($button) && strlen($button) > 0 ) ) {
 			$target = $target ? ' target="_blank"' : '';
 			$nofollow = $nofollow ? ' rel="nofollow"' : '';
-			echo '<a class="button" href="' . $url . '" title="' . $title . '"' . $target . $nofollow '>' . $button . '</a>';
+			echo '<a class="button" href="' . $url . '" title="' . $title . '"' . $target . $nofollow . '>' . $button . '</a>';
 		}
 		
 		echo '</div>';
