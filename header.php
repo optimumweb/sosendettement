@@ -24,5 +24,7 @@
 		</header>
 		<?php wpbp_header_after(); ?>
 		
-		<?php get_template_part('banner'); ?>
-		<?php get_template_part('value-bar'); ?>
+		<?php if ( is_front_page() ) : ?>
+			<?php get_template_part('banner'); ?>
+			<?php get_template_part('value-bar'); ?>
+		<?php endif; ?>
