@@ -38,6 +38,7 @@ class sosendettement_section_widget extends WP_Widget {
 		
 		if ( isset($type) && strlen($type) > 0 ) {
 			echo '<span class="type">' . $type . '</span>';
+			echo '<div class="clear"></div>';
 		}
 		
 		if ( isset($title) && strlen($title) > 0 ) {
