@@ -12,6 +12,9 @@ $(document).ready(function() {
 		$a.html('<span>' + $a.html()  + '</span>');
 	});
 	
+	var $gmap = $('#gmap');
+	$gmap.data('href', $gmap.attr('hef')).attr('href', '#').hide();
+	
 	$('a.scroll-to, .scroll-to > a').click(function(e) {
 		e.preventDefault();
 		var $this = $(this),
@@ -28,5 +31,12 @@ $(document).ready(function() {
 			}
 		);
 	});
+	
+});
+
+$(window).load(function() {
+	
+	var $gmap = $('#gmap');
+	$gmap.attr('href', $gmap.data('hef')).slideDown('slow');
 	
 });
