@@ -32,14 +32,29 @@ class sosendettement_section_widget extends WP_Widget {
 
 		echo $before_widget;
 		
+		$id = $id ? ' id="' . $id . '"' : '';
+		echo '<div' . $id . ' class="section-widget">';
+		
+		if ( isset($type) && strlen($type) > 0 ) {
+			echo '<span class="type">' . $type . '</span>';
+		}
+		
 		if ( isset($title) && strlen($title) > 0 ) {
 			echo $before_title . $title . $after_title;
 		}
 		
-		echo '<p class="description">' . $description . '</p>';
+		if ( isset($description) && strlen($description) > 0 ) {
+			echo '<p class="description">' . $description . '</p>';
+		}
 		
-		echo '<p><a class="button" href="' . $url . '">' . $button . '</a></p>';
-
+		if ( ( isset($url) && strlen($url) > 0 ) && ( isset($button) && strlen($button) > 0 ) ) {
+			$target = $target ? ' target="_blank"' : '';
+			$nofollow = $nofollow ? ' rel="nofollow"' : '';
+			echo '<a class="button" href="' . $url . '" title="' . $title . '"' . $target . $nofollow '>' . $button . '</a>';
+		}
+		
+		echo '</div>';
+		
 		echo $after_widget;
 
 	}
@@ -50,6 +65,13 @@ class sosendettement_section_widget extends WP_Widget {
 
 	function form($instance) {
 		$fields = array(
+			'id' => array(
+				'id' => $this->get_field_id('id'),
+				'name' => $this->get_field_name('id'),
+				'label' => '#ID:',
+				'type' => 'text',
+				'class' => 'widefat'
+			),
 			'type' => array(
 				'id' => $this->get_field_id('type'),
 				'name' => $this->get_field_name('type'),
@@ -86,30 +108,16 @@ class sosendettement_section_widget extends WP_Widget {
 				'class' => 'widefat'
 			),
 			'target' => array(
-				'id' => $this->get_field_id('button'),
-				'name' => $this->get_field_name('button'),
-				'label' => 'Button Link Target:',
-				'type' => 'dropdown',
-				'required' => true,
-				'options' => array(
-					'_self' => '_self',
-					'_blank' => '_blank',
-					'_parent' => '_parent',
-					'_top' => '_top'
-				),
-				'defval' => '_self'
+				'id' => $this->get_field_id('target'),
+				'name' => $this->get_field_name('target'),
+				'label' => '_blank?',
+				'type' => 'checkbox'
 			),
-			'rel' => array(
-				'id' => $this->get_field_id('rel'),
-				'name' => $this->get_field_name('rel'),
-				'label' => 'Button Link Rel:',
-				'type' => 'dropdown',
-				'required' => true,
-				'options' => array(
-					'follow' => 'follow',
-					'nofollow' => 'nofollow'
-				),
-				'defval' => 'follow'
+			'nofollow' => array(
+				'id' => $this->get_field_id('nofollow'),
+				'name' => $this->get_field_name('nofollow'),
+				'label' => 'nofollow?',
+				'type' => 'checkbox'
 			)
 		);
 		wpbp_build_form($fields, $instance);
