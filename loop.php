@@ -17,7 +17,9 @@
 					<section class="post-thumbnail">
 						<?php the_post_thumbnail('thumbnail'); ?>
 					</section>
-				<?php endif; ?>&nbsp;
+				<?php else : ?>
+					<br />
+				<?php endif; ?>
 			</div>
 			<div class="grid_5 omega">
 				<header class="post-header">
