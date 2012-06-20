@@ -37,6 +37,9 @@ $(document).ready(function() {
 $(window).load(function() {
 	
 	var $gmap = $('#gmap');
-	$gmap.attr('src', $gmap.data('src')).show();
+	$gmap.attr('src', $gmap.data('src'));
+	$gmap.ready(function() {
+		$(this).slideDown();
+	});
 	
 });
