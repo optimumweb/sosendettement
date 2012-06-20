@@ -33,7 +33,10 @@ class sosendettement_section_widget extends WP_Widget {
 		echo $before_widget;
 		
 		$id = $id ? ' id="' . $id . '"' : '';
-		echo '<div' . $id . ' class="section-widget">';
+		$class = ' class="section-widget"';
+		$style = $css ? ' style="' . $css . '"' : '';
+		
+		echo '<div' . $id . $class . $style . '>';
 		echo '<div class="container">';
 		
 		if ( isset($type) && strlen($type) > 0 ) {
@@ -95,6 +98,13 @@ class sosendettement_section_widget extends WP_Widget {
 				'name' => $this->get_field_name('description'),
 				'label' => 'Description:',
 				'type' => 'textarea',
+				'class' => 'widefat'
+			),
+			'css' => array(
+				'id' => $this->get_field_id('css'),
+				'name' => $this->get_field_name('css'),
+				'label' => 'CSS (Style):',
+				'type' => 'text',
 				'class' => 'widefat'
 			),
 			'url' => array(
