@@ -13,7 +13,7 @@
 			</section>
 		</header>
 		<?php if ( has_post_thumbnail() ) : ?>
-			<section class="post-thumbnail">
+			<section class="post-image">
 				<?php the_post_thumbnail('medium'); ?>
 			</section>
 		<?php endif; ?>
