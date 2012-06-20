@@ -34,6 +34,7 @@ class sosendettement_section_widget extends WP_Widget {
 		
 		$id = $id ? ' id="' . $id . '"' : '';
 		echo '<div' . $id . ' class="section-widget">';
+		echo '<div class="container">';
 		
 		if ( isset($type) && strlen($type) > 0 ) {
 			echo '<span class="type">' . $type . '</span>';
@@ -53,6 +54,7 @@ class sosendettement_section_widget extends WP_Widget {
 			echo '<a class="button" href="' . $url . '" title="' . $title . '"' . $target . $nofollow . '>' . $button . '</a>';
 		}
 		
+		echo '</div>';
 		echo '</div>';
 		
 		echo $after_widget;
