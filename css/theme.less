@@ -41,38 +41,44 @@ h6 { font-size: 0.9em; }
 	background-position: left center;
 }
 
-#main-nav li {
-	display: block;
-	float: left;
-	
-	a {
-		display: block;
-		padding: 40px 10px;
-		color: #fff;
-		font-size: 1em;
-		font-weight: bold;
-		text-transform: uppercase;
-		text-decoration: none;
+#main-nav {
+	ul {
+		float: right;
 		
-		span {
+		li {
 			display: block;
-			color: #ccc;
-			font-size: 0.85em;
-			font-weight: normal;
-			font-style: italic;
-			text-transform: none;
-		}
-	}
-	
-	&:hover {
-		background: #333 url(../img/main_nav_item_hover_bg.png) left bottom repeat-x;
-	}
-	
-	&.current-menu-item, &.current_page_parent {
-		background: @red url(../img/main_nav_item_active_bg.png) left bottom repeat-x;
-		
-		span {
-			color: #fff;
+			float: left;
+			
+			a {
+				display: block;
+				padding: 40px 10px;
+				color: #fff;
+				font-size: 1em;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				
+				span {
+					display: block;
+					color: #ccc;
+					font-size: 0.85em;
+					font-weight: normal;
+					font-style: italic;
+					text-transform: none;
+				}
+			}
+			
+			&:hover {
+				background: #333 url(../img/main_nav_item_hover_bg.png) left bottom repeat-x;
+			}
+			
+			&.current-menu-item, &.current_page_parent {
+				background: @red url(../img/main_nav_item_active_bg.png) left bottom repeat-x;
+				
+				span {
+					color: #fff;
+				}
+			}
 		}
 	}
 }
