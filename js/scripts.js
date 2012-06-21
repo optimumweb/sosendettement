@@ -12,9 +12,6 @@ $(document).ready(function() {
 		$a.html('<span>' + $a.html()  + '</span>');
 	});
 	
-	var $gmap = $('#gmap');
-	$gmap.data('src', $gmap.attr('src')).attr('src', '');
-	
 	$('a.scroll-to, .scroll-to > a').click(function(e) {
 		e.preventDefault();
 		var $this = $(this),
