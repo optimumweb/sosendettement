@@ -16,7 +16,7 @@
 								</ul>
 								<div class="title2"><?php _e("Vous pouvez vous en sortir!", 'sosendettement'); ?></div>
 							<?php endif; ?>
-							<div><a class="button large arrow scroll-to" href="#map"><?php _e("Consultez un professionnel", 'sosendettement'); ?></a></div>
+							<div><a class="button large arrow scroll-to" href="#map"><?php _e("Trouvez un professionnel", 'sosendettement'); ?></a></div>
 						</div>
 					</section>
 				</div>
