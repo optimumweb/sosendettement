@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 	
 	var $gmap = $('#gmap');
-	$gmap.data('src', $gmap.attr('src')).attr('src', '#').css('display', 'none');
+	$gmap.data('src', $gmap.attr('src')).attr('src', '');
 	
 	$('a.scroll-to, .scroll-to > a').click(function(e) {
 		e.preventDefault();
@@ -38,8 +38,5 @@ $(window).load(function() {
 	
 	var $gmap = $('#gmap');
 	$gmap.attr('src', $gmap.data('src'));
-	$gmap.load(function() {
-		$(this).css('display', 'block');
-	});
 	
 });
