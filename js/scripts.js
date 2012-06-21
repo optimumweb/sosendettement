@@ -34,6 +34,6 @@ $(document).ready(function() {
 $(window).load(function() {
 	
 	var $gmap = $('#gmap');
-	$gmap.attr('src', $gmap.data('src'));
+	$gmap.attr('width', $gmap.data('width')).attr('height', $gmap.data('height')).attr('src', $gmap.data('src'));
 	
 });
