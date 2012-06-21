@@ -38,7 +38,7 @@ $(window).load(function() {
 	
 	var $gmap = $('#gmap');
 	$gmap.attr('src', $gmap.data('src'));
-	$gmap.ready(function() {
+	$gmap.load(function() {
 		$(this).show();
 	});
 	
