@@ -98,6 +98,7 @@ h6 { font-size: 0.9em; }
 	}
 	
 	> .container {
+		position: relative;
 		background: url(../img/banner_bg.jpg) right center no-repeat;
 	}
 	
@@ -127,24 +128,20 @@ h6 { font-size: 0.9em; }
 			}
 		}
 	}
-	
-	#banner-right > .container {
-		position: relative;
 		
-		#banner-tel-cta {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			background: @red url(../img/banner_tel_icon.png) 15px center no-repeat;
-			.multi-border-radius(@radius,@radius,0,0);
-			padding: 10px 15px 5px 70px;
-			color: #fff;
-			text-transform: uppercase;
-			text-align: center;
-			
-			.cta { font-size: 0.85em; }
-			.tel { font-size: 1.5em; }
-		}
+	#banner-tel-cta {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: @red url(../img/banner_tel_icon.png) 15px center no-repeat;
+		.multi-border-radius(@radius,@radius,0,0);
+		padding: 10px 15px 5px 70px;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		
+		.cta { font-size: 0.85em; }
+		.tel { font-size: 1.5em; }
 	}
 }
 
