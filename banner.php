@@ -1,7 +1,7 @@
 <section id="banner">
 	<div class="topline"></div>
 	<div class="container <?php wpbp_option('container_class'); ?>">
-		<div class="grid_5">
+		<div class="grid_8">
 			<div id="banner-left">
 				<div class="container">
 					<section id="banner-content">
@@ -22,28 +22,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="grid_7">
+		<div class="grid_4">
 			<div id="banner-right">
 				<div class="container">
-					<section id="banner-image">
-						<div class="container">
-							<?php if ( is_front_page() ) : ?>
-								<?php wpbp_image_tag( array(
-									'src' => THEME_URI . '/img/banner_image_home.jpg',
-									'width' => 540,
-									'height' => 360,
-									'alt' => __("Solutions aux dettes et à l'endettement", 'sosendettement')
-								) ); ?>
-							<?php else : ?>
-								<?php wpbp_image_tag( array(
-									'src' => THEME_URI . '/img/banner_image.jpg',
-									'width' => 540,
-									'height' => 170,
-									'alt' => __("Solutions aux dettes et à l'endettement", 'sosendettement')
-								) ); ?>
-							<?php endif; ?>
-						</div>
-					</section>
 					<section id="banner-tel-cta">
 						<div class="container">
 							<div class="cta"><?php _e("Parlez confidentiellement avec un conseiller", 'sosendettement'); ?></div>
