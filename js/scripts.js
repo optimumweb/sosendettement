@@ -8,7 +8,8 @@ $(document).ready(function() {
 	
 	var $postTitles = $('.post-title');
 	$postTitles.each(function() {
-		var $a = $(this).find('a');
+		var $this = $(this),
+			$a = $this.find('a');
 		$a.html('<span>' + $a.html()  + '</span>');
 	});
 	
@@ -28,12 +29,5 @@ $(document).ready(function() {
 			}
 		);
 	});
-	
-});
-
-$(window).load(function() {
-	
-	var $gmap = $('#gmap');
-	$gmap.attr('width', $gmap.data('width')).attr('height', $gmap.data('height')).attr('src', $gmap.data('src'));
 	
 });
