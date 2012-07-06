@@ -1,7 +1,8 @@
 <?php
 
 // ENQUEUE
-function enqueue() {
+function enqueue()
+{
 	if ( !is_admin() ) {
 		// scripts
 		wpbp_enqueue_scripts( array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ) );
@@ -12,6 +13,17 @@ function enqueue() {
 	}
 }
 add_action('init', 'enqueue');
+
+
+if ( !defined('TEL') ) define('TEL', '1 866 491 4541');
+
+function sosendettement_tel($echo)
+{
+	if ( defined('TEL') ) {
+		$echo ? echo TEL : return TEL;
+	}
+	return;
+}
 
 
 /**
