@@ -17,7 +17,7 @@ add_action('init', 'enqueue');
 
 if ( !defined('TEL') ) define('TEL', '1 866 491 4541');
 
-function sosendettement_tel($echo)
+function sosendettement_tel($echo = false)
 {
 	if ( defined('TEL') ) {
 		$echo ? echo TEL : return TEL;
