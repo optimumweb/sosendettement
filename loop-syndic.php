@@ -18,7 +18,10 @@
 						'locality'			=> get_post_meta( get_the_ID(), 'locality', true ),
 						'region'			=> get_post_meta( get_the_ID(), 'region', true ),
 						'postal_code'		=> get_post_meta( get_the_ID(), 'postal_code', true ),
-						'country_name'		=> get_post_meta( get_the_ID(), 'country_name', true )
+						'country_name'		=> get_post_meta( get_the_ID(), 'country_name', true ),
+						'tel'				=> get_post_meta( get_the_ID(), 'tel', true ),
+						'email'				=> get_post_meta( get_the_ID(), 'email', true ),
+						'url'				=> get_post_meta( get_the_ID(), 'url', true )
 					);
 				?>
 				<h3 class="org"><?php the_title(); ?></h3>
