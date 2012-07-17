@@ -13,7 +13,7 @@
 			'url'				=> get_post_meta( get_the_ID(), 'url', true )
 		);
 	?>
-	<h2 class="syndic-title org"><?php the_title(); ?></h2>
+	<h2 class="syndic-title org"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	<p class="adr">
 		<?php echo '<span class="street-address">' . $vcard['street_address'] . '</span>' . ( $vcard['street_address_2'] ? ', <span class="street_address_2">' . $vcard['street_address_2'] . '</span>' : '' ) . '<br />'; ?>
 		<span class="locality"><?php echo $vcard['locality']; ?></span><br />
