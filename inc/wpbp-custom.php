@@ -9,7 +9,8 @@ function enqueue()
 		wp_enqueue_script('theme', THEME_URI . '/js/scripts.js', array('jquery', 'wpbp'));
 		// styles
 		wpbp_enqueue_styles( array( '960gs', 'default' ) );
-		wp_enqueue_style('theme', THEME_URI . '/css/master.css', array('default'));
+		wp_enqueue_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' );
+		wp_enqueue_style( 'master', THEME_URI . '/css/master.css', array('default') );
 	}
 }
 add_action('init', 'enqueue');
