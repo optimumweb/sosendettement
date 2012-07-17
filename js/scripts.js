@@ -2,6 +2,9 @@ var $document = $(document);
 
 $document.ready(function() {
 
+	var $body = $('body');
+	var $mainNav = $('#main-nav');
+
 	var $buttons = $('.button');
 	$buttons.each(function() {
 		var $this = $(this);
@@ -30,5 +33,10 @@ $document.ready(function() {
 		var duration = $this.data('duration') || 600;
 		$.scrollTo( $href, duration, { onAfter: function() { window.location.hash = href; } } );
 	});
+	
+	if ( $body.hasClass('tax-repertoire') ) {
+		$mainNav.find('.main-nav-blog').removeClass('current_page_parent');
+		$mainNav.find('.main-nav-repertoire').addClass('current_page_parent');
+	}
 	
 });
