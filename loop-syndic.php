@@ -5,7 +5,7 @@
 		<?php wpbp_post_inside_before(); ?>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<section class="syndic-image">
-				<?php the_post_thumbnail('medium'); ?>
+				<?php the_post_thumbnail('thumbnail'); ?>
 			</section>
 		<?php endif; ?>
 		<section class="syndic-content">
