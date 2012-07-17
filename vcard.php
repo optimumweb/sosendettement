@@ -27,6 +27,6 @@
 		<?php _e("Courriel :", 'sosendettement'); ?> <a class="email" href="mailto:<?php echo $vcard['email']; ?>"><?php echo $vcard['email']; ?></a>
 	</p>
 	<p>
-		<?php _e("Site Internet :", 'sosendettement'); ?> <a class="url" href=<?php echo $vcard['url']; ?>" target="_blank"><?php echo $vcard['url']; ?></a>
+		<?php _e("Site Internet :", 'sosendettement'); ?> <a class="url" href="<?php echo $vcard['url']; ?>" target="_blank"><?php echo $vcard['url']; ?></a>
 	</p>
 </div>
