@@ -15,6 +15,13 @@ $document.ready(function() {
 		$a.html( '<span>' + $a.html()  + '</span>' );
 	});
 	
+	var $syndicTitles = $('.syndic-title');
+	$syndicTitles.each(function() {
+		var $this = $(this);
+		var $a = $this.find('a');
+		$a.html( '<span>' + $a.html()  + '</span>' );
+	});
+	
 	var $pageTitles = $('.page-title');
 	$pageTitles.each(function() {
 		var $this = $(this);
