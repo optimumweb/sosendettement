@@ -8,7 +8,7 @@
 					<?php wpbp_main_inside_before(); ?>
 					<div class="container">
 						<h1 class="page-title">
-							<?php printf( __("Syndic de faillite à %s", 'sosendettement'), single_cat_title('', false) ); ?>
+							<?php printf( __("Syndics de faillite à %s", 'sosendettement'), single_cat_title('', false) ); ?>
 						</h1>
 						<?php wpbp_loop_before(); ?>
 						<?php get_template_part('loop', 'repertoire'); ?>
