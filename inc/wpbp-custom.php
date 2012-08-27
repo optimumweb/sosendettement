@@ -8,9 +8,9 @@ function enqueue()
 		wpbp_enqueue_scripts( array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ) );
 		wp_enqueue_script('theme', THEME_URI . '/js/scripts.js', array('jquery', 'wpbp'));
 		// styles
-		wpbp_enqueue_styles( array( '960gs', 'default' ) );
+		wpbp_enqueue_styles( array( '960gs', 'wpbp' ) );
 		wp_enqueue_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' );
-		wp_enqueue_style( 'master', THEME_URI . '/css/master.css', array('default') );
+		wp_enqueue_style( 'master', THEME_URI . '/css/master.css', array('wpbp') );
 	}
 }
 add_action('init', 'enqueue');
@@ -33,38 +33,38 @@ class sosendettement_section_widget extends WP_Widget {
 		extract($instance);
 
 		echo $before_widget;
-		
+
 		$id = $id ? ' id="' . $id . '"' : '';
 		$class = ' class="section-widget"';
 		$style = $css ? ' style="' . $css . '"' : '';
-		
+
 		echo '<div' . $id . $class . '>';
 		echo '<div class="styler"' . $style . '>';
 		echo '<div class="container">';
-		
+
 		if ( isset($type) && strlen($type) > 0 ) {
 			echo '<span class="type">' . $type . '</span>';
 			echo '<div class="clear"></div>';
 		}
-		
+
 		if ( isset($title) && strlen($title) > 0 ) {
 			echo $before_title . $title . $after_title;
 		}
-		
+
 		if ( isset($description) && strlen($description) > 0 ) {
 			echo '<p class="description">' . $description . '</p>';
 		}
-		
+
 		if ( ( isset($url) && strlen($url) > 0 ) && ( isset($button) && strlen($button) > 0 ) ) {
 			$target = $target ? ' target="_blank"' : '';
 			$nofollow = $nofollow ? ' rel="nofollow"' : '';
 			echo '<a class="button" href="' . $url . '" title="' . $title . '"' . $target . $nofollow . '>' . $button . '</a>';
 		}
-		
+
 		echo '</div>';
 		echo '</div>';
 		echo '</div>';
-		
+
 		echo $after_widget;
 
 	}
