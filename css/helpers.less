@@ -19,7 +19,7 @@ button, .button {
 		text-decoration: none;
 	}
 
-	// red (default)
+	&.red {
 		background: @red;
 		color: #fff;
 
@@ -27,6 +27,7 @@ button, .button {
 			color: #fff;
 			.box-shadow(2px,2px,0,@dark-red);
 		}
+	}
 
 	&.arrow {
 		> span {
