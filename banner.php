@@ -14,7 +14,7 @@
 						</ul>
 						<div class="title2"><?php _e("Vous pouvez vous en sortir!", 'sosendettement'); ?></div>
 					<?php endif; ?>
-					<div><a class="button xlarge arrow scroll-to" href="#map"><?php _e("Trouvez de l'aide", 'sosendettement'); ?></a></div>
+					<div><a class="button xlarge arrow scroll-to" href="/contactez-nous/"><?php _e("Obtenez de l'aide", 'sosendettement'); ?></a></div>
 				</div>
 			</section>
 			<section id="banner-tel-cta">
