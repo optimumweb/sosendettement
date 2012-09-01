@@ -3,7 +3,7 @@
 	<div class="notice">
 		<p class="bottom"><?php _e('Sorry, no results were found.', 'wpbp'); ?></p>
 	</div>
-	<?php get_search_form(); ?>	
+	<?php get_search_form(); ?>
 <?php endif; ?>
 
 <?php /* Start loop */ ?>
@@ -11,8 +11,7 @@
 	<?php wpbp_post_before(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php wpbp_post_inside_before(); ?>
-		<div class="container <?php wpbp_option('container_class'); ?>">
-			<div class="grid_3 alpha">
+			<div class="grid_5 alpha">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<section class="post-thumbnail">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -23,7 +22,7 @@
 					<br />
 				<?php endif; ?>
 			</div>
-			<div class="grid_5 omega">
+			<div class="grid_7 omega">
 				<header class="post-header">
 					<h2 class="post-title">
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
