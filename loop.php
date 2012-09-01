@@ -11,39 +11,38 @@
 	<?php wpbp_post_before(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php wpbp_post_inside_before(); ?>
-			<div class="grid_5 alpha">
-				<?php if ( has_post_thumbnail() ) : ?>
-					<section class="post-thumbnail">
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_post_thumbnail('thumbnail'); ?>
-						</a>
-					</section>
-				<?php else : ?>
-					<br />
-				<?php endif; ?>
-			</div>
-			<div class="grid_7 omega">
-				<header class="post-header">
-					<h2 class="post-title">
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					</h2>
-					<section class="post-meta">
-						<span class="post-author byline author vcard"><?php _e('Rédigé par', 'sosendettement'); ?> <?php the_author_posts_link(); ?></span>
-						<time class="post-date updated" datetime="<?php the_time('c'); ?>" pubdate><?php printf(__('le %s', 'sosendettement'), get_the_time(__('l, F jS, Y', 'wpbp'))); ?></time>
-					</section>
-				</header>
-				<section class="post-content">
-					<?php if (is_archive() || is_search()) : ?>
-						<?php the_excerpt(); ?>
-					<?php else : ?>
-						<?php the_content( __("Lire la suite...", 'sosendettement') ); ?>
-					<?php endif; ?>
+		<div class="grid_5 alpha">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<section class="post-thumbnail">
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<?php the_post_thumbnail('thumbnail'); ?>
+					</a>
 				</section>
-				<footer class="post-footer">
-					<p class="post-tags"><?php the_tags(); ?></p>
-				</footer>
-				<div class="clear"></div>
-			</div>
+			<?php else : ?>
+				<br />
+			<?php endif; ?>
+		</div>
+		<div class="grid_7 omega">
+			<header class="post-header">
+				<h2 class="post-title">
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</h2>
+				<section class="post-meta">
+					<span class="post-author byline author vcard"><?php _e('Rédigé par', 'sosendettement'); ?> <?php the_author_posts_link(); ?></span>
+					<time class="post-date updated" datetime="<?php the_time('c'); ?>" pubdate><?php printf(__('le %s', 'sosendettement'), get_the_time(__('l, F jS, Y', 'wpbp'))); ?></time>
+				</section>
+			</header>
+			<section class="post-content">
+				<?php if (is_archive() || is_search()) : ?>
+					<?php the_excerpt(); ?>
+				<?php else : ?>
+					<?php the_content( __("Lire la suite...", 'sosendettement') ); ?>
+				<?php endif; ?>
+			</section>
+			<footer class="post-footer">
+				<p class="post-tags"><?php the_tags(); ?></p>
+			</footer>
+			<div class="clear"></div>
 		</div>
 		<?php wpbp_post_inside_after(); ?>
 	</article>
