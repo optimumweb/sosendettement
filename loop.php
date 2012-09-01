@@ -44,6 +44,7 @@
 			</footer>
 			<div class="clear"></div>
 		</div>
+		<div class="clear"></div>
 		<?php wpbp_post_inside_after(); ?>
 	</article>
 	<hr />
