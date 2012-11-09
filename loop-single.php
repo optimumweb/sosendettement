@@ -29,6 +29,14 @@
 		    <div class="container">
 		      <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
 		      <div class="clear"></div>
+		      <div class="post-author-photo">
+						<?php wpbp_image_tag( array(
+							'src'		=> get_the_author_meta('photo'),
+							'alt'		=> get_the_author_meta('display_name'),
+							'width'		=> 150,
+							'height'	=> 150
+						) ); ?>
+					</div>
           <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
           <?php echo wpautop( get_the_author_meta('description') ); ?>
           <ul class="post-author-links">
