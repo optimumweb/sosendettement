@@ -26,21 +26,25 @@
 		</footer>
 		<section class="post-author">
 		  <div class="section-widget">
-        <h3 class="post-author-name"><?php the_author(); ?></h3>
-        <p><?php echo get_the_author_meta('description'); ?></p>
-        <ul class="post-author-links">
-          <?php if ( get_the_author_meta('googleplus') ) : ?>
-            <li class="social-icon vector x24 google-plus">
-              <a href="<?php the_author_meta('googleplus'); ?>?rel=author" target="blank"><?php printf(__("%s Google+ Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
-            </li>
-          <?php endif; ?>
-          <?php if ( get_the_author_meta('twitter') ) : ?>
-            <li class="social-icon vector x24 twitter">
-              <a href="http://twitter.com/<?php the_author_meta('twitter'); ?>" target="blank"><?php printf(__("%s Twitter Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
-            </li>
-          <?php endif; ?>
-        </ul>
-        <div class="clear"></div>
+		    <div class="container">
+		      <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
+		      <div class="clear"></div>
+          <h3 class="post-author-name"><?php the_author(); ?></h3>
+          <p><?php echo get_the_author_meta('description'); ?></p>
+          <ul class="post-author-links">
+            <?php if ( get_the_author_meta('googleplus') ) : ?>
+              <li class="social-icon vector x24 google-plus">
+                <a href="<?php the_author_meta('googleplus'); ?>?rel=author" target="blank"><?php printf(__("%s Google+ Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
+              </li>
+            <?php endif; ?>
+            <?php if ( get_the_author_meta('twitter') ) : ?>
+              <li class="social-icon vector x24 twitter">
+                <a href="http://twitter.com/<?php the_author_meta('twitter'); ?>" target="blank"><?php printf(__("%s Twitter Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
+              </li>
+            <?php endif; ?>
+          </ul>
+          <div class="clear"></div>
+        </div>
       </div>
 			<div class="clear"></div>
 		</section>
