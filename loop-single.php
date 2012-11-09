@@ -29,7 +29,7 @@
 		    <div class="container">
 		      <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
 		      <div class="clear"></div>
-          <h3 class="post-author-name"><?php the_author(); ?></h3>
+          <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
           <p><?php echo get_the_author_meta('description'); ?></p>
           <ul class="post-author-links">
             <?php if ( get_the_author_meta('googleplus') ) : ?>
