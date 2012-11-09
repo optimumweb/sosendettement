@@ -142,12 +142,3 @@ class sosendettement_section_widget extends WP_Widget {
 	}
 }
 register_widget('sosendettement_section_widget');
-
-function sosendettement_add_user_icon($contactmethods)
-{
-	// Add Photo
-	$contactmethods['icon'] = 'Icon URL';
-	return $contactmethods;
-}
-add_filter('user_contactmethods', 'sosendettement_add_user_icon', 10, 1);
-
