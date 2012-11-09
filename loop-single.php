@@ -8,7 +8,7 @@
 				<?php the_title(); ?>
 			</h1>
 			<section class="post-meta">
-				<span class="post-author byline author vcard"><?php _e('Rédigé par', 'sosendettement'); ?> <?php the_author_posts_link(); ?></span>
+				<span class="post-author byline author vcard"><?php _e('Rédigé par', 'sosendettement'); ?> <a class="scroll-to" href="#author"><?php the_author(); ?></a></span>
 				<time class="post-date updated" datetime="<?php the_time('c'); ?>" pubdate><?php printf(__('le %s', 'sosendettement'), get_the_time(__('l, F jS, Y', 'wpbp'))); ?></time>
 			</section>
 		</header>
@@ -24,7 +24,7 @@
 			<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'wpbp'), 'after' => '</p></nav>' )); ?>
 			<p class="post-tags"><?php the_tags(); ?></p>
 		</footer>
-		<section class="post-author">
+		<section id="author" class="post-author">
 		  <div class="section-widget">
 		    <div class="container">
 		      <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
