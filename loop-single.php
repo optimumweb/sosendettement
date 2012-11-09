@@ -41,8 +41,8 @@
           <?php echo wpautop( get_the_author_meta('description') ); ?>
           <ul class="post-author-links">
             <?php if ( get_the_author_meta('icon') ) : ?>
-              <li>
-                <a href="<?php the_author_meta('url'); ?>" target="blank"><img src="<?php the_author_meta('icon'); ?>" width="24" height="24" alt="<?php the_author_meta('display_name'); ?>" /></a>
+              <li class="icon www">
+                <a class="ir" href="<?php the_author_meta('url'); ?>" target="blank"><?php printf(__("%s Website", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
               </li>
             <?php endif; ?>
             <?php if ( get_the_author_meta('googleplus') ) : ?>
