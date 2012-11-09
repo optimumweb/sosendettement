@@ -40,6 +40,11 @@
           <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
           <?php echo wpautop( get_the_author_meta('description') ); ?>
           <ul class="post-author-links">
+            <?php if ( get_the_author_meta('icon') ) : ?>
+              <li>
+                <a href="<?php the_author_meta('url'); ?>" target="blank"><img src="<?php the_author_meta('icon'); ?>" width="24" height="24" alt="<?php the_author_meta('display_name'); ?>" /></a>
+              </li>
+            <?php endif; ?>
             <?php if ( get_the_author_meta('googleplus') ) : ?>
               <li class="social-icon vector x24 google-plus">
                 <a href="<?php the_author_meta('googleplus'); ?>?rel=author" target="blank"><?php printf(__("%s Google+ Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
