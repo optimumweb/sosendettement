@@ -30,7 +30,7 @@
 		      <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
 		      <div class="clear"></div>
           <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
-          <p><?php echo get_the_author_meta('description'); ?></p>
+          <?php echo wpautop( get_the_author_meta('description') ); ?>
           <ul class="post-author-links">
             <?php if ( get_the_author_meta('googleplus') ) : ?>
               <li class="social-icon vector x24 google-plus">
