@@ -42,7 +42,7 @@
           <ul class="post-author-links">
             <?php if ( get_the_author_meta('icon') ) : ?>
               <li class="icon www">
-                <a class="ir" href="<?php the_author_meta('url'); ?>" target="blank"><?php printf(__("%s Website", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
+                <a class="ir" href="<?php the_author_meta('user_url'); ?>" target="blank"><?php printf(__("%s Website", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
               </li>
             <?php endif; ?>
             <?php if ( get_the_author_meta('googleplus') ) : ?>
