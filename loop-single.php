@@ -40,7 +40,7 @@
           <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
           <?php echo wpautop( get_the_author_meta('description') ); ?>
           <ul class="post-author-links">
-            <?php if ( get_the_author_meta('icon') ) : ?>
+            <?php if ( get_the_author_meta('user_url') ) : ?>
               <li class="icon www">
                 <a class="ir" href="<?php the_author_meta('user_url'); ?>" target="blank"><?php printf(__("%s Website", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
               </li>
