@@ -57,11 +57,11 @@
                             'src'		=> get_the_author_meta('photo'),
                             'alt'		=> get_the_author_meta('display_name'),
                             'width'		=> 150,
-                            'height'	=> 150,
-                            'style'     => "width:150px; height:150px;"
+                            'height'	=> 150
                         ) ); ?>
                         </div>
                     </div>
+                    <div class="clear"></div>
                 </div>
             </div>
             <div class="clear"></div>
