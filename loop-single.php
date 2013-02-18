@@ -27,9 +27,9 @@
         <section id="author" class="post-author">
             <div class="section-widget">
                 <div class="container">
-                    <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
-                    <div class="clear"></div>
                     <div class="grid_8">
+                        <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
+                        <div class="clear"></div>
                         <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
                         <?php echo wpautop( get_the_author_meta('description') ); ?>
                         <ul class="post-author-links">
