@@ -2,6 +2,15 @@
 
 	<?php wpbp_wrap_before(); ?>
 	<div id="wrap" role="document">
+        <div id="flash">
+            <div class="container <?php wpbp_option('container_class'); ?>">
+                <div class="grid_12">
+                    <div id="quebec-only">
+                        <?php _e("SOS Endettement est un service offert seulement aux résidents du Québec", 'sosendettement'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<?php wpbp_header_before(); ?>
 		<header id="header" role="banner">
 			<?php wpbp_header_inside_before(); ?>
