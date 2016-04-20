@@ -9,13 +9,20 @@
 function optionsframework_option_name() {
 
 	// This gets the theme name from the stylesheet (lowercase and without spaces)
-	$themename = get_theme_data(STYLESHEETPATH . '/style.css');
-	$themename = $themename['Name'];
-	$themename = preg_replace("/\W/", "", strtolower($themename) );
+	if ( defined('STYLESHEETPATH') ) {
+		$themename = get_theme_data(STYLESHEETPATH . '/style.css');
+	} elseif ( defined('THEME_DIRECTORY') ) {
+		$themename = get_theme_data(THEME_DIRECTORY . '/style.css');
+	}
+	
+	if ( isset($themename) ) {
+		$themename = $themename['Name'];
+		$themename = preg_replace("/\W/", "", strtolower($themename) );
 
-	$optionsframework_settings = get_option('optionsframework');
-	$optionsframework_settings['id'] = $themename;
-	update_option('optionsframework', $optionsframework_settings);
+		$optionsframework_settings = get_option('optionsframework');
+		$optionsframework_settings['id'] = $themename;
+		update_option('optionsframework', $optionsframework_settings);
+	}
 
 	// echo $themename;
 }
