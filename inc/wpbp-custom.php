@@ -4,7 +4,7 @@
 function enqueue()
 {
 	if ( !is_admin() ) {
-	  wpbp_enqueue_lib( array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ) );
+	  	wpbp_enqueue_lib( array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ) );
 		// scripts
 		wp_enqueue_script('theme', THEME_URI . '/js/scripts.js', array('jquery', 'wpbp'));
 		// styles

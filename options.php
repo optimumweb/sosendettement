@@ -14,7 +14,7 @@ function optionsframework_option_name() {
 	} elseif ( defined('THEME_DIRECTORY') ) {
 		$themename = get_theme_data(THEME_DIRECTORY . '/style.css');
 	}
-	
+
 	if ( isset($themename) ) {
 		$themename = $themename['Name'];
 		$themename = preg_replace("/\W/", "", strtolower($themename) );
