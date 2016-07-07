@@ -239,23 +239,40 @@ article {
 	}
 
 	.post-author {
-	  .post-author-photo {
-	    img {
-        .border-radius(500px);
-        background: #fff;
-	    }
-	  }
+		.post-author-photo {
+			img {
+				.border-radius(500px);
+				background: #fff;
+			}
+		}
 
-    .post-author-links {
-      margin: 0;
-      padding: 0;
+		.post-author-links {
+			margin: 0;
+			padding: 0;
 
-      li {
-        display: block;
-        float: left;
-        margin-right: 0.5em;
-      }
-    }
+			li {
+				display: block;
+				float: left;
+				margin-right: 0.5em;
+			}
+		}
+	}
+
+	.post-content {
+		table {
+			border: 1px solid #ccc;
+
+			th,
+			td {
+				padding: 0.5em;
+			}
+
+			th {
+				font-weight: bold;
+				background-color: #333;
+				color: #fff;
+			}
+		}
 	}
 }
 
