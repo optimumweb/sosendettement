@@ -19,10 +19,8 @@
 			</section>
 			<?php if ( function_exists('of_get_option') && of_get_option('tel') ) : ?>
 				<section id="banner-tel-cta">
-					<div class="container">
-						<div class="cta"><?php _e("Parlez confidentiellement avec un conseiller", 'sosendettement'); ?></div>
-						<div class="tel"><?php _e("Sans frais :", 'sosendettement'); ?> <strong><?php echo of_get_option('tel'); ?></strong></div>
-					</div>
+					<div class="cta"><?php _e("Parlez confidentiellement avec un conseiller", 'sosendettement'); ?></div>
+					<div class="tel"><?php _e("Sans frais :", 'sosendettement'); ?> <strong><?php echo of_get_option('tel'); ?></strong></div>
 				</section>
 			<?php endif; ?>
 		</div>
