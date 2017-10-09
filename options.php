@@ -37,12 +37,17 @@ function optionsframework_options() {
 
 	$options = array(
 		array(
-			'name' => 'General',
+			'name' => __("Général", 'sosendettement'),
 			'type' => 'heading'
 		),
 		array(
-			'name' => 'Téléphone',
-			'id' => 'tel',
+			'name' => __("Téléphone", 'sosendettement'),
+			'id'   => 'tel',
+			'type' => 'text'
+		),
+		array(
+			'name' => __("Carte", 'sosendettement'),
+			'id'   => 'map',
 			'type' => 'text'
 		)
 	);
