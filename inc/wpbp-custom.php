@@ -39,7 +39,6 @@ class sosendettement_section_widget extends WP_Widget {
 
 		echo '<div' . $id . $class . '>';
 		echo '<div class="styler"' . $style . '>';
-		echo '<div class="container">';
 
 		if ( isset($type) && strlen($type) > 0 ) {
 			echo '<span class="type">' . $type . '</span>';
@@ -59,8 +58,7 @@ class sosendettement_section_widget extends WP_Widget {
 			$nofollow = $nofollow ? ' rel="nofollow"' : '';
 			echo '<a class="button red" href="' . $url . '" title="' . $title . '"' . $target . $nofollow . '>' . $button . '</a>';
 		}
-
-		echo '</div>';
+		
 		echo '</div>';
 		echo '</div>';
 
