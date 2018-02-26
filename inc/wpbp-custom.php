@@ -4,11 +4,11 @@
 function enqueue()
 {
 	if ( !is_admin() ) {
-	  	wpbp_enqueue_lib( array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ) );
+	  	wpbp_enqueue_lib(array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ));
 		// scripts
 		wp_enqueue_script('theme', THEME_URI . '/js/scripts.js', array('jquery', 'wpbp'));
 		// styles
-		wp_enqueue_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+		wp_enqueue_style('open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
 		wp_enqueue_style('master', THEME_URI . '/css/master.css', array('wpbp'));
 	}
 }
@@ -20,12 +20,12 @@ add_action('init', 'enqueue');
  * Displays the latest posts
  */
 
-class sosendettement_section_widget extends WP_Widget {
-
-  function sosendettement_section_widget() {
-    $widget_ops = array('description' => 'Displays a section');
-    parent::WP_Widget(false, __('SOSEndettement: Section Widget', 'wpbp'), $widget_ops);
-	}
+class sosendettement_section_widget extends WP_Widget
+{
+    function sosendettement_section_widget() {
+        $widget_ops = array('description' => 'Displays a section');
+        parent::WP_Widget(false, __('SOSEndettement: Section Widget', 'wpbp'), $widget_ops);
+    }
 
 	function widget($args, $instance) {
 		extract($args);

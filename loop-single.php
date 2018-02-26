@@ -26,42 +26,44 @@
         </footer>
         <section id="author" class="post-author">
             <div class="section-widget">
-                <div class="container">
-                    <div class="grid_8">
-                        <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
-                        <div class="clear"></div>
-                        <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
-                        <?php echo wpautop( get_the_author_meta('description') ); ?>
-                        <ul class="post-author-links">
-                            <?php if ( get_the_author_meta('user_url') ) : ?>
-                            <li class="icon www">
-                                <a class="ir" href="<?php the_author_meta('user_url'); ?>" target="blank"><?php printf(__("Visit %s's Website", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
-                            </li>
-                            <?php endif; ?>
-                            <?php if ( get_the_author_meta('googleplus') ) : ?>
-                            <li class="social-icon vector x24 google-plus">
-                                <a href="<?php the_author_meta('googleplus'); ?>?rel=author" target="blank"><?php printf(__("%s Google+ Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
-                            </li>
-                            <?php endif; ?>
-                            <?php if ( get_the_author_meta('twitter') ) : ?>
-                            <li class="social-icon vector x24 twitter">
-                                <a href="http://twitter.com/<?php the_author_meta('twitter'); ?>" target="blank"><?php printf(__("%s Twitter Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
-                            </li>
-                            <?php endif; ?>
-                        </ul>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="grid_4">
-                        <div class="post-author-photo">
-                            <?php wpbp_image_tag( array(
-                            'src'		=> get_the_author_meta('photo'),
-                            'alt'		=> get_the_author_meta('display_name'),
-                            'width'		=> 150,
-                            'height'	=> 150
-                        ) ); ?>
+                <div class="section-widget-content">
+                    <div class="container">
+                        <div class="grid_8">
+                            <span class="type"><?php _e("Auteur", 'sosendettement'); ?></span>
+                            <div class="clear"></div>
+                            <h3 class="widget-title post-author-name"><?php the_author(); ?></h3>
+                            <?php echo wpautop( get_the_author_meta('description') ); ?>
+                            <ul class="post-author-links">
+                                <?php if ( get_the_author_meta('user_url') ) : ?>
+                                    <li class="icon www">
+                                        <a class="ir" href="<?php the_author_meta('user_url'); ?>" target="blank"><?php printf(__("Visit %s's Website", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( get_the_author_meta('googleplus') ) : ?>
+                                    <li class="social-icon vector x24 google-plus">
+                                        <a href="<?php the_author_meta('googleplus'); ?>?rel=author" target="blank"><?php printf(__("%s Google+ Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( get_the_author_meta('twitter') ) : ?>
+                                    <li class="social-icon vector x24 twitter">
+                                        <a href="http://twitter.com/<?php the_author_meta('twitter'); ?>" target="blank"><?php printf(__("%s Twitter Profile", 'pierreroy'), get_the_author_meta('display_name')); ?></a>
+                                    </li>
+                                <?php endif; ?>
+                            </ul>
+                            <div class="clear"></div>
                         </div>
+                        <div class="grid_4">
+                            <div class="post-author-photo">
+                                <?php wpbp_image_tag( array(
+                                    'src'		=> get_the_author_meta('photo'),
+                                    'alt'		=> get_the_author_meta('display_name'),
+                                    'width'		=> 150,
+                                    'height'	=> 150
+                                ) ); ?>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             <div class="clear"></div>
