@@ -6,7 +6,7 @@ function enqueue()
 	if ( !is_admin() ) {
 	  	wpbp_enqueue_lib(array( 'modernizr', 'jquery', 'wpbp', 'scrollTo' ));
 		// scripts
-		wp_enqueue_script('theme', THEME_URI . '/js/scripts.js', array('jquery', 'wpbp'));
+		wp_enqueue_script('theme', THEME_URI . '/js/scripts.js', array('jquery'), '2.0');
 		// styles
 		wp_enqueue_style('open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
 		wp_enqueue_style('master', THEME_URI . '/css/master.css', array('wpbp'));

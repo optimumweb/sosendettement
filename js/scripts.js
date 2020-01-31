@@ -1,6 +1,4 @@
-var $document = $(document);
-
-$document.ready(function() {
+$(document).ready(function() {
 
 	var $body = $('body');
 	var $mainNav = $('#main-nav');
