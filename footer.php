@@ -1,5 +1,3 @@
-		<?php get_template_part('map'); ?>
-		
 		<?php wpbp_footer_before(); ?>
 		<footer id="footer" role="contentinfo">
 			<?php wpbp_footer_inside_before(); ?>
